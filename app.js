@@ -24,3 +24,11 @@ function success1 (response22) {
 function failed1 (error22) {
     document.body.insertAdjacentHTML(`beforeend`, `<p>Login is invalid</p>`)
 }
+
+// log out button
+document.getElementById(`delete_me`).addEventListener(`click`, log_out_now);
+
+function log_out_now () {
+    Cookies.remove(`token`);
+    document.body.insertAdjacentHTML(`beforeend`, `<h1>You've Logged out</h1>`)
+}

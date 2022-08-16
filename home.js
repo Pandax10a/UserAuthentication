@@ -24,7 +24,7 @@ function success1 (response33) {
         document.getElementById(`div${i}`).style.backgroundColor = `${response33[`data`][`data`][i][`color`]}`
     }
         
-    
+    document.body.insertAdjacentHTML(`beforeend`, `<br> <button onclick = "to_index_page()">back to log in page</button>`);
 }
 
 function to_index_page () {
